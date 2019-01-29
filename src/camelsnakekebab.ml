@@ -6,7 +6,7 @@ let index = Js.Array.unsafe_get
 let capitalize str = 
   Js.String.concat 
     (Js.String.sliceToEnd ~from:1 str)
-    (Js.String.charAt 0 str|> uppercase) ;;
+    (Js.String.charAt 0 str |> uppercase) ;;
 
 
 let capitalize_http_header s =

@@ -28,6 +28,7 @@
     "bs-platform": "^4.0.18"
   },
   "devDependencies": {
+    "jest-junit": "^6.0.0",
     "@glennsl/bs-jest": "^0.4.7"
   }
 }

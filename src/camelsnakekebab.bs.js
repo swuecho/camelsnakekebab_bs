@@ -55,7 +55,9 @@ function convert_case(convert_first, convert_rest, sep, str) {
   var match = words.length;
   if (match !== 0) {
     if (match !== 1) {
-      return Curry._1(convert_first, words[0]).concat(sep, words.slice(1).map(Curry.__1(convert_rest)).join(sep));
+      var first_word = Curry._1(convert_first, words[0]);
+      var rest_words = words.slice(1).map(Curry.__1(convert_rest));
+      return /* array */[first_word].concat(rest_words).join(sep);
     } else {
       return words[0];
     }

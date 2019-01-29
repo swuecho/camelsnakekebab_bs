@@ -25,9 +25,9 @@ let convert_case ~convert_first ~convert_rest ~sep ~str =
   match Js.Array.length words with
   | 0 -> "" 
   | 1 -> index words 0
-  | _ -> Js.String.concatMany [| sep ; Js.Array.joinWith sep (Js.Array.map convert_rest 
-                                                                (Js.Array.sliceFrom 1 words))
-                              |] (convert_first (index words 0));;
+  | _ ->  let first_word = (convert_first (index words 0)) in 
+    let rest_words = Js.Array.(map convert_rest (sliceFrom 1 words)) in 
+    Js.Array.(joinWith sep (concat rest_words [| first_word |]));;
 
 
 

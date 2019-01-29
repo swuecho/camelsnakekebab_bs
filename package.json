@@ -24,8 +24,10 @@
     "src/",
     "bsconfig.json"
   ],
-  "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.7",
+  "dependencies": {
     "bs-platform": "^4.0.18"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.7"
   }
 }

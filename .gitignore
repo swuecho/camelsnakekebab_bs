@@ -28,3 +28,4 @@ lib/bs
 # added by Hao
 node_modules/
 bundle.js
+__tests__/test-results.xml

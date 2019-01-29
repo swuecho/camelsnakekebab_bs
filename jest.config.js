@@ -3,7 +3,7 @@ module.exports = {
     "default",
     ["jest-junit", {
       suiteName: "jest tests",
-      "outputDirectory": "tests",
+      "outputDirectory": "__tests__",
       "outputName": "test-results.xml",
     }]
   ],

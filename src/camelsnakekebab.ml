@@ -30,8 +30,6 @@ let convert_case ~convert_first ~convert_rest ~sep ~str =
     Js.Array.(joinWith sep (concat rest_words [| first_word |]));;
 
 
-
-
 let lower_camel_case str =
   convert_case ~convert_first:lowercase ~convert_rest:capitalize ~sep:"" ~str;;
 

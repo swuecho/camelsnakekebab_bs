@@ -16,6 +16,14 @@
   ],
   "author": "Hao Wu <echowuhao@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swuecho/camelsnakekebab_bs.git"
+  },
+  "files": [
+    "src/",
+    "bsconfig.json"
+  ],
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.7",
     "bs-platform": "^4.0.18"

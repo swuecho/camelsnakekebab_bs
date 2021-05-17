@@ -1,7 +1,7 @@
 {
   "name": "@echowuhao/camelsnakekebab",
-  "version": "0.3.0",
-  "main": "src/src/camelsnakekebab.bs.js",
+  "version": "0.3.1",
+  "main": "src/camelsnakekebab.bs.js",
   "scripts": {
     "re:build": "rescript",
     "re:start": "rescript build -w",

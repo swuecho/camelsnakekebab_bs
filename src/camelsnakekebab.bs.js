@@ -51,12 +51,12 @@ function split_words(str) {
 
 function convert_case(convert_first, convert_rest, sep, str) {
   var words = split_words(str);
-  var match = words.length;
-  if (match === 0) {
-    return "";
-  }
-  if (match === 1) {
+  var len = words.length;
+  if (len === 1) {
     return words[0];
+  }
+  if (len === 0) {
+    return "";
   }
   var first_word = Curry._1(convert_first, words[0]);
   var rest_words = words.slice(1).map(Curry.__1(convert_rest));

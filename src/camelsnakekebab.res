@@ -34,9 +34,9 @@ let split_words = str => Js.Array.map(Option.getExn, Js.String.splitByRe(word_se
 
 let convert_case = (~convert_first, ~convert_rest, ~sep, ~str) => {
   let words = split_words(str)
-  switch Js.Array.length(words) {
-  | 0 => ""
-  | 1 => index(words, 0)
+  switch words {
+  | [] => ""
+  | [w] => w
   | _ =>
     let first_word = convert_first(index(words, 0))
     let rest_words = {

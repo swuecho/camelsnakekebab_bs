@@ -22,10 +22,7 @@ module.exports = {
     '**/__tests__/*.js'
   ],
   moduleFileExtensions: [
-    'ts',
-    'tsx',
     'js',
-    'jsx',
     'json'
   ],
 }

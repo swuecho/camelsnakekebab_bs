@@ -1,4 +1,10 @@
 module.exports = {
+  transform: {
+    "^.+\\.(js|jsx)$": "babel-jest",
+  },
+  transformIgnorePatterns: [
+    '/node_modules/(?!bs-platform|@glennsl|@rescript|bs-)'
+  ],
   reporters: [
     "default",
     ["jest-junit", {
@@ -17,5 +23,12 @@ module.exports = {
   testMatch: [
     '**/__tests__/*.js'
   ],
-  testURL: 'http://localhost/'
+  testURL: 'http://localhost/',
+  moduleFileExtensions: [
+    'ts',
+    'tsx',
+    'js',
+    'jsx',
+    'json'
+  ],
 }

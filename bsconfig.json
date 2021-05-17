@@ -16,6 +16,7 @@
   },
   "suffix": ".bs.js",
   "external-stdlib": "@rescript/std",
+  "namespace": true,
   "bs-dependencies": [],
   "bs-dev-dependencies": [
     "@glennsl/bs-jest"

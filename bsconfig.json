@@ -1,7 +1,8 @@
 {
   "name": "camelsnakekebab",
-  "version": "0.0.1",
-  "sources": [{
+  "version": "0.0.2",
+  "sources": [
+    {
       "dir": "src"
     },
     {
@@ -10,14 +11,14 @@
     }
   ],
   "package-specs": {
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   },
   "suffix": ".bs.js",
+  "external-stdlib": "@rescript/std",
+  "namespace": true,
   "bs-dependencies": [],
-  "bs-dev-dependencies": ["@glennsl/bs-jest"],
-  "warnings": {
-    "error": "+101"
-  },
-  "refmt": 3
+  "bs-dev-dependencies": [
+    "@glennsl/bs-jest"
+  ]
 }

@@ -2,9 +2,8 @@
   "name": "@echowuhao/camelsnakekebab",
   "version": "0.1.0",
   "scripts": {
-    "clean": "bsb -clean-world",
-    "build": "bsb -make-world",
-    "watch": "bsb -make-world -w",
+    "re:build": "rescript",
+    "re:start": "rescript build -w",
     "test": "jest"
   },
   "keywords": [
@@ -25,10 +24,14 @@
     "bsconfig.json"
   ],
   "dependencies": {
-    "bs-platform": "^4.0.18"
+    "@babel/preset-typescript": "^7.13.0",
+    "@rescript/std": "^9.1.0"
   },
   "devDependencies": {
-    "jest-junit": "^6.0.0",
-    "@glennsl/bs-jest": "^0.4.7"
+    "@babel/preset-env": "^7.14.2",
+    "@glennsl/bs-jest": "^0.7.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest-junit": "^12.0.0",
+    "rescript": "^9.1.2"
   }
 }

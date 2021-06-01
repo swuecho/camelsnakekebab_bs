@@ -1,4 +1,3 @@
-open Belt
 let uppercase = Js.String.toUpperCase
 let lowercase = Js.String.toLowerCase
 let index = Js.Array.unsafe_get
@@ -30,7 +29,7 @@ let word_sep = %re(
   "/\\s+|_|-|(?<=[A-Z])(?=[A-Z][a-z])|(?<=[^A-Z_-])(?=[A-Z])|(?<=[A-Za-z0-9])(?=[^A-Za-z0-9])/"
 )
 
-let split_words = str => Js.Array.map(Option.getExn, Js.String.splitByRe(word_sep, str))
+let split_words = str => Js.Array.map(Belt.Option.getExn, Js.String.splitByRe(word_sep, str))
 
 let convert_case = (~convert_first, ~convert_rest, ~sep, ~str) => {
   let words = split_words(str)
